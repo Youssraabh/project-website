@@ -36,7 +36,7 @@ const props = withDefaults(defineProps<Props>(), {
   type: 'button'
 })
 
-const tag = computed(() => props.href ? 'a' : 'button')
+const tag = computed(() => props.href !== undefined ? 'a' : 'button')
 </script>
 
 <style scoped>
