@@ -16,6 +16,7 @@
     <MethodSection />
     <MaturityCriteriaSection />
     <ValuePropositionSection />
+    <WhyOpenSection />
 
     <section id="why" class="section">
       <div class="section-content">
