@@ -119,6 +119,7 @@ const roadmapPhases = [
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  position: relative;
 }
 
 .timeline-dot {
@@ -129,6 +130,8 @@ const roadmapPhases = [
   border: 3px solid var(--muted);
   margin-bottom: var(--spacing-lg);
   flex-shrink: 0;
+  position: relative;
+  z-index: 2;
 }
 
 .timeline-content {
@@ -164,10 +167,26 @@ const roadmapPhases = [
 
   .timeline-items {
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-4xl) var(--spacing-2xl);
+    gap: var(--spacing-4xl) var(--spacing-3xl);
   }
 
   .timeline-line {
+    display: none;
+  }
+
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 11px;
+    top: 24px;
+    bottom: -32px;
+    width: 2px;
+    background-color: var(--border);
+    z-index: 0;
+  }
+
+  .timeline-item:nth-child(3)::before,
+  .timeline-item:nth-child(4)::before {
     display: none;
   }
 }
@@ -185,6 +204,17 @@ const roadmapPhases = [
   .timeline-items {
     grid-template-columns: 1fr;
     gap: var(--spacing-3xl);
+  }
+
+  .timeline-item::before {
+    display: block;
+    left: 11px;
+    top: 24px;
+    bottom: -24px;
+  }
+
+  .timeline-item:last-child::before {
+    display: none;
   }
 
   .timeline-title {
