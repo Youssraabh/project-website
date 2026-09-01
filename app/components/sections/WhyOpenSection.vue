@@ -11,7 +11,7 @@
   SPDX-License-Identifier: Apache-2.0
 -->
 <template>
-  <section id="why-open" class="why-open-section">
+  <section id="why" class="why-open-section">
     <div class="why-open-container">
       <div class="why-open-card">
         <!-- Badge -->

@@ -18,13 +18,6 @@
     <ValuePropositionSection />
     <WhyOpenSection />
 
-    <section id="why" class="section">
-      <div class="section-content">
-        <h1>Why</h1>
-        <p>Why use QSOS for your open source software selection.</p>
-      </div>
-    </section>
-
     <section id="roadmap" class="section">
       <div class="section-content">
         <h1>Roadmap</h1>
