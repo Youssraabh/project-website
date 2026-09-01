@@ -31,11 +31,17 @@
 
       <!-- CTAs -->
       <div class="hero-ctas">
-        <Button variant="primary" size="lg" @click="handleJoinClick">
+        <Button
+          variant="primary"
+          size="lg"
+          href="https://projects.eclipse.org/projects/technology.qsos"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Join & Contribute
         </Button>
         <Button variant="secondary" size="lg" href="#method">
-          See the Methods
+          See the Method
         </Button>
       </div>
 
@@ -61,10 +67,6 @@
 </template>
 
 <script setup lang="ts">
-const handleJoinClick = () => {
-  // TODO: Implement join/contribute navigation
-  console.log('Join & Contribute clicked')
-}
 </script>
 
 <style scoped>
