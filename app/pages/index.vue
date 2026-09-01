@@ -17,13 +17,7 @@
     <MaturityCriteriaSection />
     <ValuePropositionSection />
     <WhyOpenSection />
-
-    <section id="roadmap" class="section">
-      <div class="section-content">
-        <h1>Roadmap</h1>
-        <p>Our roadmap and future plans.</p>
-      </div>
-    </section>
+    <RoadmapSection />
   </div>
 </template>
 
