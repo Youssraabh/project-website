@@ -108,6 +108,38 @@
   --max-width-prose: 65ch;
 }
 
+/* Dark Mode Colors */
 :root.dark {
-  /* Placeholder for dark mode tokens */
+  /* Background & Surfaces */
+  --background: oklch(0.255 0.004 250);     
+  --foreground: oklch(0.975 0 0);           
+  --surface: oklch(0.295 0.004 250);        
+  --card: oklch(0.315 0.004 250);           
+  --card-foreground: oklch(0.975 0 0);      
+  
+  /* Primary & Secondary */
+  --primary: oklch(0.975 0 0);              
+  --primary-foreground: oklch(0.24 0.004 250); 
+  --secondary: oklch(0.37 0.004 250);       
+  --secondary-foreground: oklch(0.975 0 0); 
+  
+  /* Muted & Accent */
+  --muted: oklch(0.37 0.004 250);           
+  --muted-foreground: oklch(0.815 0.003 250); 
+  --accent: oklch(0.37 0.004 250);          
+  --accent-foreground: oklch(0.975 0 0);    
+  
+  /* Brand Colors */
+  --brand: oklch(0.84 0.13 155);            
+  --brand-strong: oklch(0.9 0.12 162);      
+  --brand-foreground: oklch(0.24 0.004 250); 
+  
+  /* Destructive */
+  --destructive: oklch(0.75 0.17 25);       
+  
+  /* Borders & Inputs */
+  --border: oklch(0.47 0.004 250);          
+  
+  --input: oklch(0.5 0.004 250);            
+  --ring: oklch(0.86 0.1 158);              
 }
